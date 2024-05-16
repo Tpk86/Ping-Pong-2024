@@ -1,0 +1,13 @@
+{
+  "$GMScript":"",
+  "%Name":"scr_Screenshake",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_Screenshake",
+  "parent":{
+    "name":"Script",
+    "path":"folders/Script.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
