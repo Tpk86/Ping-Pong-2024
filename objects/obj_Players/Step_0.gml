@@ -45,10 +45,14 @@
 
 	switch (player_id) {
 		case 0:
-			var player_One_X_Left = 100 + sprite_xoffset;
-			var player_One_X_Right = room_width / 2 - sprite_xoffset - 70;
-			var player_One_Y_Up = 100 + sprite_yoffset;
-			var player_One_Y_Down = room_height - 100 - sprite_yoffset;
+			// var player_One_X_Left = 100 + sprite_xoffset;
+			// var player_One_X_Right = room_width / 2 - sprite_xoffset - 70;
+			// var player_One_Y_Up = 100 + sprite_yoffset;
+			// var player_One_Y_Down = room_height - 100 - sprite_yoffset;
+			var player_One_X_Left = 50 + sprite_xoffset;
+			var player_One_X_Right = room_width / 2 - sprite_xoffset;
+			var player_One_Y_Up = 50 + sprite_yoffset;
+			var player_One_Y_Down = room_height - 50 - sprite_yoffset;
 
 			// Clamp per il giocatore 0
 			x = clamp(x, player_One_X_Left, player_One_X_Right);
@@ -56,10 +60,14 @@
 			break;
 
 		case 1:
-			var player_Two_X_Left = room_width / 2 + sprite_xoffset + 70;
-			var player_Two_X_Right = room_width - sprite_xoffset - 100;
-			var player_Two_Y_Up = 100 + sprite_yoffset;
-			var player_Two_Y_Down = room_height - 100 - sprite_yoffset;
+			// var player_Two_X_Left = room_width / 2 + sprite_xoffset + 70;
+			// var player_Two_X_Right = room_width - sprite_xoffset - 100;
+			// var player_Two_Y_Up = 100 + sprite_yoffset;
+			// var player_Two_Y_Down = room_height - 100 - sprite_yoffset;
+			var player_Two_X_Left = room_width / 2 + sprite_xoffset;
+			var player_Two_X_Right = room_width - sprite_xoffset - 50;
+			var player_Two_Y_Up = 50 + sprite_yoffset;
+			var player_Two_Y_Down = room_height - 50 - sprite_yoffset;
 
 			// Clamp per il giocatore 1
 			x = clamp(x, player_Two_X_Left, player_Two_X_Right);
@@ -68,4 +76,4 @@
 	}
 #endregion
 
-if (!instance_exists(obj_Ball)) { spd = 2; } else { spd = obj_Ball.speed / 2; }
+if (!instance_exists(obj_Ball)) { max_Spd = 2.0; } else { max_Spd = obj_Ball.speed / 2; }

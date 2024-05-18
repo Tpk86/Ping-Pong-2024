@@ -1,7 +1,5 @@
 /// @desc Bounce
 
-/// @desc Bounce
-
 switch (last_Hit) {
 	// Nessuno ha toccato la palla
 	case -4:

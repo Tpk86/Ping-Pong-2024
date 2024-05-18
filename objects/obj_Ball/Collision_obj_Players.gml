@@ -3,7 +3,7 @@ last_Hit = other.player_id;
 player_Name = other.player_name;
 bounces++;
 
-if (speed < 10) { if (bounces % 3 == 0) { speed += inc_Spd; } }
+if (speed < 15) { if (bounces % 3 == 0) { speed += inc_Spd; } }
 
 switch (last_Hit) {
 	case 0:

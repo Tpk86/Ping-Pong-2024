@@ -6,6 +6,7 @@ switch (last_Hit) {
 		obj_Players.goal_P_One++;
 		obj_Players.player_One_Score += 3;
 		obj_Players.player_Two_Score -= 3;
+		sprite_index = spr_Player_Normal;
 		break;
 	// Il giocatore 1 ha toccato la palla (Goal)
 	case 0:
@@ -17,6 +18,7 @@ switch (last_Hit) {
 		obj_Players.autogoal_P_Two++;
 		obj_Players.player_One_Score += 3;
 		obj_Players.player_Two_Score -= 3;
+		sprite_index = spr_Player_Normal;
 		break;
 }
 

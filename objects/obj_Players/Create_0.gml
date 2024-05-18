@@ -5,7 +5,7 @@ vertical_Movement = 0;
 
 accel = 0.25;
 decel = 0.05;
-max_Spd = 2;
+max_Spd = 2.5;
 
 autogoal_P_One = 0;
 autogoal_P_Two = 0;

@@ -35,4 +35,4 @@ rollback_define_input({
 rollback_define_player(obj_Players, "Game");
 
 // true = offline | false = online
-if (!rollback_join_game()) { rollback_create_game(2, true); }
+if (!rollback_join_game()) { rollback_create_game(2, false); }

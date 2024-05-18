@@ -1,6 +1,6 @@
 /// @desc Crea la pallina
 
-var ball = instance_create_layer(room_width / 2, room_height / 2, "Game", obj_Ball);
+var ball = instance_create_layer(room_width / 2, choose(275, room_height / 2, 625), "Game", obj_Ball);
 
 switch (spawn_Direction) {
 	case 0:
